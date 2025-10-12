@@ -1,5 +1,5 @@
 # Temporary shim for development.
-# his will be replaced my calls to Rust-backed Socket and Connection objects.
+# To be replaced by calls to Rust-backed Socket and Connection objects.
 import socket
 
 class PyConn:
