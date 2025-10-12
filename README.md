@@ -3,11 +3,11 @@ A micro-HTTP framework for the Memphis Python engine.
 
 ## Usage
 For now:
-```python
+```bash
 python3 test_app.py
 ```
 Eventually:
-```python
+```bash
 memphis test_app.py
 ```
 And test with:
