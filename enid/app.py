@@ -30,6 +30,7 @@ class App:
         while True:
             conn, _ = sock.accept()
             req = Request.parse(conn.recv(4096))
+            print(f"{req.method} {req.path}")
             handler = self.routes.get((req.path, req.method))
             if not handler:
                 conn.send(Response.text("404 Not Found", status=404).to_bytes())
